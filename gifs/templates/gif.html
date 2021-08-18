@@ -3,7 +3,8 @@
 {% block content%}
     <h1> Title {{gif.title}}</h1>
     <img src="{{ gif.url }}" alt="mygif">
-    <!-- <a href="{% url 'animal' info.id%}">{{l}}</a> -->
+    <p>{{gif.likes}}</p>
+    <a href="{% url 'likes' gif.id%}">Likes</a>
     <p>uploaded by: {{gif.uploader_name}} </p>
     <p> Time: {{gif.created_at}}</p>
 
