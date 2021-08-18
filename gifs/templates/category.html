@@ -1,0 +1,10 @@
+{% extends 'basic.html'%}
+
+{% block content%}
+
+    {% for gif in g.gifs.all%}
+    <img src="{{ gif.url }}" alt="mygif">
+
+
+    {% endfor %}
+{% endblock %}
